@@ -104,3 +104,46 @@ Input    Output    Comments
 Hints and Guidelines
 The solution of this problem, like the previous one, can also be split into three parts – reading the 
 input data, processing them and printing the output.
+
+03.Problem: Back to the Past
+Ivan is 18 years old and receives an inheritance that consists of X money and a time machine. He 
+decides to return to 1800 but does not know if the money will be enough to live without working. 
+Write a program that calculates if Ivan will have enough money to not have to work until a particular 
+year (inclusive). Assuming that for every even (1800, 1802, etc.) year he will spend 12 000 dollars. 
+For every odd one (1801, 1803, etc.) he will spend 12 000 + 50 * [the age he will have reached in 
+the given year].
+Input Data
+The input is read from the console and contains exactly 2 lines:
+• Inherited money – a real number in the range [1.00 … 1 000 000.00].
+• Year, until which he has to live in the past (inclusive) – integer number in the range [1801 … 
+1900].
+Output Data
+Print on the console 1 line. The sum must be formatted up to the two symbols after the decimal point:
+• If money is enough:
+o "Yes! He will live a carefree life and will have {N} dollars left." – where N is the money that 
+will remain.
+• If money is NOT enough:
+o "He will need {М} dollars to survive." – where M is the sum that is NOT enough.
+Sample Input and Output
+Input   Output                        Explanations 
+50000   Yes! He will live a carefree  1800 → even
+1802    life and will have 13050.00    → Spends 12000 dollars
+        dollars left.                  → Remain 50000 – 12000 = 38000
+                                      1801 → odd
+                                      → Spends 12000 + 19*50 = 12950 dollars
+                                      → Remaining 38000 – 12950 = 25050
+                                      1802 → even
+                                      → Spends 12000 dollars
+                                      → Remaining 25050 – 12000 = 13050
+                                      
+Input      Output                     Explanations                                       
+100000.15  He will need 12399.85      1800 → even   
+1808       dollars to survive.        → Remaining 100000.15 – 12000 = 88000.15 
+                                      1801 → odd
+                                      → Remaining 88000.15 – 12950 = 75050.15
+                                      … 
+                                      1808 → odd → -399.85 - 12000 = -12399.85
+                                      12399.85 is not enough
+Hints and Guidelines
+Let’s solve the problem step by step: read the input data, iterate over the years, check the heritage 
+and print the output.
