@@ -19,7 +19,7 @@ int main() {
 		}
 		year++;
 	}
-	if (heritage>0) {
+	if (heritage>=0) {
 		cout<<"Yes! He will live a carefree life and will have "<<
 		      heritage<<" dollars left."<<endl;
 	}
