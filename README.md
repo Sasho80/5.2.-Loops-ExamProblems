@@ -147,3 +147,73 @@ Input      Output                     Explanations
 Hints and Guidelines
 Let’s solve the problem step by step: read the input data, iterate over the years, check the heritage 
 and print the output.
+04.Problem: Hospital
+For a certain period of time, patients arrive at the hospital every day for an examination. It has initially 
+7 doctors. Each doctor can treat only one patient per day, but sometimes there is a shortage of 
+doctors, so the remaining patients are sent to other hospitals. Every third day the hospital makes 
+calculations and if the count of untreated patients is greater than the count of treated ones, another 
+doctor is appointed. Appointment takes place before the daily patient acceptance begins.
+Write a program, that calculates for a given period of time, the count of treated and untreated 
+patients.
+Input Data
+Input is read from the console and contains:
+• On the first line – the period, for which you need to make calculations. Integer in the range of 
+[1 … 1000].
+• On the next lines (equal to the count of days) – count of the patients, who arrive for 
+treatment for the current day. Integer in the range of [0 … 10 000].
+Output Data
+Print on the console 2 lines:
+218 Programming Basics with C#
+• On the first line: “Treated patients: {count of treated patients}.”
+• On the second line: “Untreated patients: {count of untreated patients}.”
+Sample Input and Output
+Input  Output           Comments 
+4
+7
+27
+9
+1
+Problem: Hospital
+For a certain period of time, patients arrive at the hospital every day for an examination. It has initially 
+7 doctors. Each doctor can treat only one patient per day, but sometimes there is a shortage of 
+doctors, so the remaining patients are sent to other hospitals. Every third day the hospital makes 
+calculations and if the count of untreated patients is greater than the count of treated ones, another 
+doctor is appointed. Appointment takes place before the daily patient acceptance begins.
+Write a program, that calculates for a given period of time, the count of treated and untreated 
+patients.
+Input Data
+Input is read from the console and contains:
+• On the first line – the period, for which you need to make calculations. Integer in the range of 
+[1 … 1000].
+• On the next lines (equal to the count of days) – count of the patients, who arrive for 
+treatment for the current day. Integer in the range of [0 … 10 000].
+Output Data
+Print on the console 2 lines:
+218 Programming Basics with C#
+• On the first line: “Treated patients: {count of treated patients}.”
+• On the second line: “Untreated patients: {count of untreated patients}.”
+Sample Input and Output
+Input Output                  Comments 
+4     Treated patients: 23.   Day 1: 7 treated and 0 untreated patients for the day
+7     Untreated patients: 21. Day 2: 7 treated and 20 untreated patients for the day
+27                            Day 3: By this moment the treated patients are 14,
+9                             and untreated ones – 20 –> New doctor is appointed. 
+1                             –> 8 treated and 1 untreated patients for the day
+                              Day 4: 1 treated and 0 untreated patients for the day
+                              Total: 23 treated and 21 untreated patients.
+Input Output
+3     Treated patients: 21.
+7     Untreated patients: 0.
+7
+7
+Input Output
+6     Treated patients: 40.
+25    Untreated patients: 87.
+25
+25
+25
+25
+2
+Hints and Guidelines
+Let’s solve the problem step by step: read the input data, calculate the number treated and untreated 
+patients and print the output.
