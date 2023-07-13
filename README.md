@@ -147,33 +147,8 @@ Input      Output                     Explanations
 Hints and Guidelines
 Let’s solve the problem step by step: read the input data, iterate over the years, check the heritage 
 and print the output.
+
 04.Problem: Hospital
-For a certain period of time, patients arrive at the hospital every day for an examination. It has initially 
-7 doctors. Each doctor can treat only one patient per day, but sometimes there is a shortage of 
-doctors, so the remaining patients are sent to other hospitals. Every third day the hospital makes 
-calculations and if the count of untreated patients is greater than the count of treated ones, another 
-doctor is appointed. Appointment takes place before the daily patient acceptance begins.
-Write a program, that calculates for a given period of time, the count of treated and untreated 
-patients.
-Input Data
-Input is read from the console and contains:
-• On the first line – the period, for which you need to make calculations. Integer in the range of 
-[1 … 1000].
-• On the next lines (equal to the count of days) – count of the patients, who arrive for 
-treatment for the current day. Integer in the range of [0 … 10 000].
-Output Data
-Print on the console 2 lines:
-218 Programming Basics with C#
-• On the first line: “Treated patients: {count of treated patients}.”
-• On the second line: “Untreated patients: {count of untreated patients}.”
-Sample Input and Output
-Input  Output           Comments 
-4
-7
-27
-9
-1
-Problem: Hospital
 For a certain period of time, patients arrive at the hospital every day for an examination. It has initially 
 7 doctors. Each doctor can treat only one patient per day, but sometimes there is a shortage of 
 doctors, so the remaining patients are sent to other hospitals. Every third day the hospital makes 
@@ -217,3 +192,42 @@ Input Output
 Hints and Guidelines
 Let’s solve the problem step by step: read the input data, calculate the number treated and untreated 
 patients and print the output.
+
+05.Problem: Division without Remainder
+We have n integers in the range of [1 ... 1000]. Among them, some percentage p1 are divisible without 
+remainder by 2, percentage p2 are divisible without remainder by 3, percentage p3 are divisible 
+without remainder by 4. Write a program that calculates and prints the p1, p2 and p3 percentages.
+Example: We have n = 10 numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the 
+following distribution and visualization:
+Division without 
+remainder by Numbers Count Percent 
+2 680, 2, 600, 200, 800, 46, 128 7 p1 = (7 / 10) * 100 = 70.00%
+3 600 1 p2 = (1 / 10) * 100 = 10.00%
+4 680, 600, 200, 800, 128 5 p3 = (5 / 10) * 100 = 50.00%
+Input Data
+On the first line of the input is the integer n (1 ≤ n ≤ 1000) – count of numbers. On each of the next
+n lines we have one integer in the range of [1 … 1000] – numbers that needs to be checked for 
+division.
+Output Data
+Print on the console 3 lines, each of them containing a percentage between 0% and 100%, two digits 
+after the decimal point, for example 25.00%, 66.67%, 57.14%.
+• On the first line – percentage of the numbers that are divisible by 2.
+• On the second line – percentage of the numbers that are divisible by 3.
+• On the third line – percentage of the numbers that are divisible by 4.
+Sample Input and Output
+Input Output   Input Output   Input  Output 
+10    70.00%   3     33.33%   1      100.00%
+680   10.00%   3     100.00%  12     100.00%
+2     50.00%   6     0.00%           100.00%
+600            9
+200
+800
+799
+199
+46
+128
+65
+
+Hints and Guidelines
+For the current and for the next problem you will need to write by yourself the program code, 
+following the given guidelines.
